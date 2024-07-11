@@ -1,0 +1,227 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+footer {
+  margin-top: 300px;
+  background-color: var.$red-color;
+  .footer-card {
+    max-width: 1406px;
+    position: relative;
+    bottom: 200px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(168, 166, 166);
+    background-color: var.$red-color;
+    opacity: 0px;
+    .footer-card1 {
+      padding: 64px 0;
+      h1 {
+        font-family: open sans;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 29.9px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: var.$bg-color;
+        margin: 0 auto;
+      }
+      h2 {
+        font-family: open sans;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 62.4px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 25px;
+        color: var.$bg-color;
+      }
+      h3 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.04em;
+        color: var.$bg-color;
+        margin-top: 24px;
+        text-align: center;
+      }
+    }
+    .footer-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      .input1 {
+        padding: 12px 0;
+        margin: 0 200px;
+        border-radius: 50px;
+        background-color: var.$red-color;
+        border: 1px solid rgb(0, 224, 224);
+        color: rgb(245, 245, 245);
+        font-family: open sans;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        margin: 0 auto;
+        transition: 1s;
+      }
+
+      button {
+        padding: 12px 32px;
+        border-radius: 50px;
+        background-color: var.$red-color;
+        border: 1px solid rgb(0, 224, 224);
+        color: var.$bg-color;
+        font-family: Cera Round Pro;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        transition: 1s;
+      }
+      button:hover {
+        background-color: blue;
+        color: rgb(121, 183, 130);
+        box-shadow: 1px 1px 20px 5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    .footer-one {
+      p {
+        font-family: open sans;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 41.6px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        max-width: 177px;
+        margin: 0 auto;
+        color: var.$bg-color;
+      }
+      h1 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        color: var.$bg-color;
+        margin: 0 auto;
+        max-width: 281px;
+        padding-top: 24px;
+      }
+      .h2-h2 {
+        padding-top: 10px;
+        display: block;
+        h2 {
+          font-family: Open Sans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0.04em;
+          text-align: center;
+          color: var.$bg-color;
+          margin: 0 auto;
+          max-width: 189px;
+        }
+      }
+    }
+    .footer-two {
+      position: relative;
+      bottom: 45px;
+      img {
+        max-width: 100%;
+        display: flex;
+        margin: 0 auto;
+      }
+      p {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 438px;
+        color: var.$bg-color;
+        padding-top: 32px;
+        padding-bottom: 45px;
+      }
+      h3 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        max-width: 394px;
+        color: var.$text-color;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 40px;
+      }
+    }
+    .footer-thre {
+      h1 {
+        font-family: Open sans;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 41.6px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        max-width: 337px;
+        margin: 0 auto;
+        color: var.$text-color;
+      }
+      h2 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: var.$text-color;
+        margin: 0 auto;
+        max-width: 160px;
+        padding-top: 24px;
+      }
+      h3 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: var.$text-color;
+        max-width: 160px;
+        padding-top: 12px;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media (max-width: 1009px) {
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-two {
+      padding-top: 30px;
+    }
+  }
+  @media (max-width: 1293px) {
+    .footer-btn {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
